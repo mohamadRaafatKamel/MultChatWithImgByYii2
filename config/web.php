@@ -5,6 +5,7 @@ $db = require __DIR__ . '/db.php';
 
 $config = [
     'id' => 'basic',
+    'name' => 'My Yii Vue',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'aliases' => [
@@ -12,9 +13,13 @@ $config = [
         '@npm'   => '@vendor/npm-asset',
     ],
     'components' => [
+        'telegram' => [
+            'class' => 'aki\telegram\Telegram',
+            'botToken' => '366300521:AAHNuvVnTEU8zHKglJmLX8QYjAO0ofJkanQ',
+        ],
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
-            'cookieValidationKey' => 'MultChatWithImgByYii2',
+            'cookieValidationKey' => 'gWw7dT0Ou0iCJp8Nwt2SlOCo5qOU1Pvs',
         ],
         'cache' => [
             'class' => 'yii\caching\FileCache',
